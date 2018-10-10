@@ -1,0 +1,11 @@
+{
+    "name": "palette",
+    "description": "An arcade library for manipulating the palette at runtime",
+    "files": [
+        "palette.ts"
+    ],
+    "public": true,
+    "dependencies": {
+        "game": "file:../game"
+    }
+}
