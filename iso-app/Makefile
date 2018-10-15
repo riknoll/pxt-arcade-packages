@@ -3,8 +3,7 @@ arcade-root = ..\..\pxt-arcade
 lib-root = .\libs\project
 external-path = .\public\external
 
-all: build-app update-external
-
+all: build-app
 
 build-app: update-external
 	npm run build

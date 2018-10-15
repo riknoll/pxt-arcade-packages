@@ -3,7 +3,8 @@
     "dependencies": {
         "device": "file:../../../../pxt-arcade/libs/device",
         "iso-util": "file:../iso-util",
-        "iso": "file:../../../iso"
+        "iso": "file:../../../iso",
+        "palette": "file:../../../palette"
     },
     "description": "",
     "files": [
