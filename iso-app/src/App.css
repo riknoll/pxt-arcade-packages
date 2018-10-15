@@ -26,3 +26,8 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+html, body, iframe, #root, .App, #simulator-embed, .simframe {
+  height: 100%;
+  width: 100%;
+}
