@@ -50,8 +50,8 @@ namespace palette {
     /**
      * Dynamically set all or part of the game's current palette
      *
-     * @param palette The colors to set (not including black or transparency)
-     * @param start The index to start setting colors at (not including black or transparency)
+     * @param palette The colors to set
+     * @param start The index to start setting colors at
      * @param length The number of colors to copy
      * @param pOffset The offset to start copying from the palette
      */
@@ -60,7 +60,7 @@ namespace palette {
         if (!length) length = palette.length;
 
         const fromStart = pOffset * 3;
-        const toStart = (start + 1) * 3;
+        const toStart = start * 3;
 
         const copyLength = Math.min(Math.max(length | 0, 0), Math.min(availableColors(), palette.length)) * 3;
         for (let i = 0; i < copyLength; i++) {
@@ -71,11 +71,10 @@ namespace palette {
     }
 
     /**
-     * Returns the number of colors available in the palette not
-     * including transparency or black
+     * Returns the number of colors available in the palette
      */
     export function availableColors(): number {
-        return (defaultPalette.length / 3) - 2;
+        return defaultPalette.length / 3;
     }
 
     /**
@@ -116,7 +115,8 @@ namespace palette {
      */
     export function gradient(start: number, end: number, steps: number): Palette {
         steps = steps | 0;
-        if (steps <= 2) return undefined;
+        if (steps < 2) return undefined;
+        if (steps === 2) return hexToPalette([start, end]);
 
         const r1 = _r(start);
         const g1 = _g(start);
