@@ -2,18 +2,19 @@
     "name": "isometric",
     "description": "An arcade library for isometric tilemaps and games",
     "files": [
-        "IsoAssets.ts",
-        "IsoCamera.ts",
-        "IsoCharacter.ts",
         "IsoConstants.ts",
-        "IsoCursor.ts",
-        "IsoGame.ts",
         "IsoMap.ts",
-        "IsoPath.ts",
-        "IsoSprite.ts",
-        "IsoStats.ts",
         "IsoTexture.ts",
-        "IsoWorld.ts"
+        "IsoAssets.ts",
+        "IsoStats.ts",
+        "IsoSprite.ts",
+        "IsoCamera.ts",
+        "IsoPath.ts",
+        "IsoCharacter.ts",
+        "IsoGame.ts",
+        "IsoCursor.ts",
+        "IsoWorld.ts",
+        "IsoTest.ts"
     ],
     "public": true,
     "dependencies": {

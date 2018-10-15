@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "outDir": "../built",
+        "rootDir": ".",
+        "newLine": "LF",
+        "sourceMap": false
+    },
+    "include": [
+        "./iso/*.ts",
+        "./menu/*.ts",
+        "./palette/*.ts",
+        "../pxt-arcade/libs/**/*.ts",
+        "../pxt-common-packages/libs/game/*.ts",
+        "../pxt-common-packages/libs/base/*.ts",
+        "../pxt-common-packages/libs/controller/*.ts",
+        "../pxt-common-packages/libs/screen/*.ts",
+        "../pxt-common-packages/libs/core/*.ts"
+    ]
+}
