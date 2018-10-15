@@ -1,0 +1,12 @@
+{
+    "name": "iso-project",
+    "dependencies": {
+        "device": "file:../../../../pxt-arcade/libs/device",
+        "iso-util": "file:../iso-util",
+        "iso": "file:../../../iso"
+    },
+    "description": "",
+    "files": [
+        "main.ts"
+    ]
+}
