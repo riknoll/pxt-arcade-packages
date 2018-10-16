@@ -20,7 +20,8 @@ update-external: build-arcade build-pxt build-project
 	copy $(pxt-root)\built\web\bluebird.min.js $(external-path)\bluebird.min.js
 
 build-project: update-iso
-	cd $(lib-root) && node ..\..\$(pxt-root)\built\pxt.js build
+	cd $(lib-root) && echo \
+	require("../../../../pxt/built/pxt.js").mainCli("../../../../pxt-arcade", ["build"]).done() | node
 	copy $(lib-root)\built\debug\binary.js $(external-path)\iso-binary.js
 
 update-iso:
